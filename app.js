@@ -1,9 +1,10 @@
 
 /*
-Pedir un número a un usuario a través de un prompt y luego dividirlo por 10, ejemplo: 5 / 10 igual 0.5
+Si a = [1,2,3] crear un script que determine de muestre un alert del tipo de dato de a.
 */
 
-let num = parseInt(prompt("ingrese un número"));
+let a = [1,2,3]
 
-document.getElementById("parrafo1").innerHTML = num / 10;
-
+document.getElementById("parrafo1").innerHTML = typeof a;
+ 
+alert(typeof a);
