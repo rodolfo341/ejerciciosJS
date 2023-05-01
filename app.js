@@ -1,18 +1,28 @@
 
-/*
-Crear un programa que determine si un número introducido en un popup es divisible por 11 y 5 o no
-*/
 
-let num = prompt("Ingrese un número");
+let x = parseInt(prompt("Ingrese X"));
+let y = parseInt(prompt("Ingrese Y"));
+let z = parseInt(prompt("Ingrese Z"));
 
-( num % 5 === 0 && num % 11 === 0 ) 
-? document.getElementById("parrafo1").innerHTML = "Es divisible por 5 y 11" 
-: document.getElementById("parrafo1").innerHTML = "No es divisible por 5 y 11";
+( x > y && x > z ) ? document.getElementById("parrafo1").innerHTML = "X es mayor" : 
+( y > x && y > z ) ? document.getElementById("parrafo1").innerHTML = "Y es mayor" : 
+( z > x && z > y ) ? document.getElementById("parrafo1").innerHTML = "Z es mayor" :
+                     document.getElementById("parrafo1").innerHTML = "X = Y = Z";
+                     
+                     
+if ( x > y && x > z ) document.getElementById("parrafo2").innerHTML = "X es mayor" 
+else if ( y > x && y > z ) document.getElementById("parrafo2").innerHTML = "Y es mayor"
+else if ( z > x && z > y ) document.getElementById("parrafo2").innerHTML = "Z es mayor";
+else document.getElementById("parrafo2").innerHTML = "X = Y = Z";
 
 
-if ( num % 5 === 0 && num % 11 === 0) {
-    document.getElementById("parrafo2").innerHTML = "Es divisible por 5 y 11";
-}else{
-    document.getElementById("parrafo2").innerHTML = "No es divisible por 5 y 11";
+if ( x > y && x > z ){
+    document.getElementById("parrafo3").innerHTML = "X es mayor" 
+} else if ( y > x && y > z ) {
+    document.getElementById("parrafo3").innerHTML = "Y es mayor"
+}else if ( z > x && z > y ){
+    document.getElementById("parrafo3").innerHTML = "Z es mayor";
+}else {
+    document.getElementById("parrafo3").innerHTML = "X = Y = Z";
 }
 
