@@ -18,8 +18,8 @@ let esNumero = false;
 ( letra === "0" ) ? esNumero = true :
                     esNumero = false;
 
-( esNumero === true) ? document.getElementById("parrafo1").innerHTML = "Primer caracter es número":
-document.getElementById("parrafo1").innerHTML = "Primer caracter es letra"; 
+( esNumero === true) ? document.getElementById("parrafo1").innerHTML = "Primer caracter es número"
+: document.getElementById("parrafo1").innerHTML = "Primer caracter es letra"; 
 
 
 
