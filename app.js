@@ -1,11 +1,9 @@
 
-7/*
-Escribir un programa que muestre un prompt donde el usuario ingresa un número, luego muestra otro prompt pidiendo otro número, finalmente el programa muestra una alerta con el resultado de la suma.
+/*
+Pedir un número a un usuario a través de un prompt y luego dividirlo por 10, ejemplo: 5 / 10 igual 0.5
 */
 
-let gCelcius = parseInt(prompt("ingrese grados celcius"));
+let num = parseInt(prompt("ingrese un número"));
 
-let gFerenhaid = ( gCelcius * ( 9 / 5 ) ) + 32;
-
-document.getElementById("parrafo1").innerHTML = gCelcius + "C° son = " + gFerenhaid + " F°";
+document.getElementById("parrafo1").innerHTML = num / 10;
 
