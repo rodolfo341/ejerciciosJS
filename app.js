@@ -11,3 +11,6 @@ let mayor = ( x > y && x > z ) ? "El mayor es X" :
                                  "Son todos iguales" ;
 
 document.getElementById("parrafo2").innerHTML = mayor; 
+
+
+
